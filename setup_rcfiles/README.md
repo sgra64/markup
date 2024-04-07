@@ -1,4 +1,4 @@
-# Setting up *.bashrc* or *.zshrc* Files in HOME Directory
+# Setting up *.bashrc* or *.zshrc* Files in $HOME Directory
 
 &nbsp;
 ## Steps
