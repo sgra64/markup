@@ -2,6 +2,7 @@
 
 General content for setting up systems
 
- - Setup [Cygwin](setup_cygwin/README.md) on Windows (Unix emulator)
+ - Setup [cygwin](setup_cygwin/README.md) (Unix emulator) on Windows
 
+ - Setup [*.bashrc*, *.zshrc*](setup_rcfiles/README.md) - Files in $HOME Directory
 
