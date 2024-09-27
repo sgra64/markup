@@ -3,7 +3,7 @@
 Understanding the terminal and the system environment is a key
 factor software development.
 
-1. [*Terminal* and *Shell*](01-terminal-and-shell)
+1. [*Terminal* and *Shell*](01-terminal-and-shell.md)
     - What is a (Software-) Terminal?
     - Why are terminals relevant today?
     - ASCII, UTF-8 and ANSI Escape Codes.
@@ -11,18 +11,18 @@ factor software development.
     - Which *Shell* do I use (Mac: *zsh*, other: *bash*)?
     - Hall of Fame (significant people)
 
-1. [*Filesystem* and *$HOME* directory](02-filesystem-and-home)
+1. [*Filesystem* and *$HOME* directory](02-filesystem-and-home.md)
     - What is a *filesystem*?
     - How is a *filesystem* organized (*files, directories, mounts, links*)?
     - What is and where is my *$HOME* directory?
     - What is in my *$HOME* directory (*dotfiles*)?
 
-1. [*Processes* and *Environment Variables*](03-processes-and-environment)
+1. [*Processes* and *Environment Variables*](03-processes-and-environment.md)
     - Process creation and inheritance.
     - Global and local *environment variables*.
     - Variables: *$HOME*, *$PATH*.
 
-1. [*Dotfiles*](04-dotfiles)
+1. [*Dotfiles*](04-dotfiles.md)
     - Role and Execution order of *profile*, *rc* and *logout* files:
         - *.profile* (Mac: *.zprofile* )
         - *.bashrc* (Mac: *.zshrc*)
@@ -30,7 +30,7 @@ factor software development.
     - History files
     - *Sourcing* dotfiles
 
-1. [*Aliases* and *Functions*](05-aliases-and-functions)
+1. [*Aliases* and *Functions*](05-aliases-and-functions.md)
     - Role of command *alias*
     - Role of *function()*
 
