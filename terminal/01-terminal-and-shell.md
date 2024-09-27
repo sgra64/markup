@@ -1,17 +1,18 @@
 ## 1. *Terminal* and *Shell*
 
 Topics
-- a) [What is a (Software-) Terminal?](#a-what-is-a-software--terminal)
-- b) [Why are terminals relevant today?](#b-why-are-terminals-relevant-today)
-- c) [ASCII, UTF-8 and ANSI Escape Codes](#c-ascii-utf-8-and-ansi-escape-codes)
-- d) [What is a *Shell*?](#d-what-is-a-shell)
-- e) [Which *Shell* do I use (Mac: *zsh*, other: *bash*)?](#e-which-shell-do-i-use)
-- f) [Hall of Fame](#f-hall-of-fame)
+- a) [What is a Terminal?](#a-what-is-a-terminal)
+- b) [What is a Software-Terminal?](#b-what-is-a-software-terminal)
+- c) [Why are terminals relevant today?](#c-why-are-terminals-relevant-today)
+- d) [ASCII, UTF-8 and ANSI Escape Codes](#d-ascii-utf-8-and-ansi-escape-codes)
+- e) [What is a *Shell*?](#e-what-is-a-shell)
+- f) [Which *Shell* do I use (Mac: *zsh*, other: *bash*)?](#f-which-shell-do-i-use)
+- g) [Hall of Fame](#g-hall-of-fame)
 
 
 ---
 &nbsp;
-### a) What is a (Software-) Terminal?
+### a) What is a Terminal?
 
 A (Software-) Terminal is an application that emulates the behavior of a
 hardware terminal comprised of a alphanumiercal screen for output and a
@@ -19,7 +20,11 @@ keyboard for input.
 
 The figure shows a
 [VT100](https://en.wikipedia.org/wiki/VT100) terminal by Digital Equipment
-Corporation (DEC, 1978). The unit is **not a PC**. It only contains
+Corporation (DEC, 1978). The unit is **not a PC**.
+
+<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgRU1CEK8zqx7af1U20cQtCEHbmMehGdr0trYp1DvlIAwQPTvj2Gut4ZTBpyc-8E2SFLum83-wL2RPwno_HJpGSLFivxHP0fs5OhoFvIHG9nGz8wcdNyrRpwV3R-MbWSt5rWJX0CCcfWA/s1600/dec-vt100-1.jpg" width="400"/>
+
+The unit only contains
 
 - a *screen* to show alphanumerical output (lines) and
 
@@ -28,31 +33,24 @@ Corporation (DEC, 1978). The unit is **not a PC**. It only contains
 The terminal must be connected to a separate computer (e.g. a
 [DEC VAX](https://fedtechmagazine.com/article/2017/07/decs-vax-superminicomputer-became-mainstay-federal-research)).
 
-<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgRU1CEK8zqx7af1U20cQtCEHbmMehGdr0trYp1DvlIAwQPTvj2Gut4ZTBpyc-8E2SFLum83-wL2RPwno_HJpGSLFivxHP0fs5OhoFvIHG9nGz8wcdNyrRpwV3R-MbWSt5rWJX0CCcfWA/s1600/dec-vt100-1.jpg" width="400"/>
-
 Interacting with a computer by text-line input and output is the most
 basic form of human-machine interaction.
 
+
+---
+&nbsp;
+### b) What is a Software-Terminal?
+
 A *(Software-) Terminal* emulates line-based text input and output
-in a window. Terminals then connect to a large range of *"computers"*,
-which include:
+in a window. Terminals then can connect to a large range of local or
+remote *machines*, *virtual machines* or *containers*.
 
-- the local system (laptop), but also
-
-- to [Virtual Machines (VM)](https://www.vmware.com/topics/virtual-machine)
-    or [Containers (Docker)](https://www.docker.com/resources/what-container/)
-    running on the local system or
-
-- are running on remote systems connected over the network, e.g. running
-    on a *Compute Cloud* such as
-    [*Amazon EC2*](https://aws.amazon.com/ec2/)
-    [*Microsoft Azure*](https://azure.microsoft.com/en-us) or
-    [*Google Cloud*](https://cloud.google.com/).
-
-Today, developers use many terminal windows on their laptops to interact
-with local and/or remote machines.
-There is a large list of terminal software also known as
+There is a long list of terminal software also known as
 [terminal emulators](https://en.wikipedia.org/wiki/List_of_terminal_emulators).
+
+[Tmux](https://www.perl.com/article/an-introduction-to-tmux/) [3] is a
+*terminal multiplexer* that allows to split a terminal into multiple panes
+and run a terminal session in each pane.
 
 Linux, MacOS have decent terminal software pre-installed (simply *"open a
 Terminal"*).
@@ -73,22 +71,40 @@ Good choices for terminal software for Windows are:
 
 ---
 &nbsp;
-### b) Why are terminals relevant today?
+### c) Why are terminals relevant today?
 
 Developers do not only work on their laptops. They ususally connect to
-other computers or compute instances over the network through terminal windows,
+other computers over the network through terminal windows,
 e.g. through
 [*ssh*](https://www.techtarget.com/searchsecurity/definition/Secure-Shell).
 
 <img src="https://studyhub.org.uk/wp-content/uploads/2023/10/programming-background-with-html-min-scaled.jpg" width="400"/>
 
+Systems terminal connect to include:
+
+- the local system (laptop), but also
+
+- [Virtual Machines (VM)](https://www.vmware.com/topics/virtual-machine)
+    or [Containers (Docker)](https://www.docker.com/resources/what-container/)
+    running on the local system or
+
+- are running on remote systems connected over the network, e.g. running
+    on a *Compute Cloud* such as at
+    [*Amazon EC2*](https://aws.amazon.com/ec2/),
+    [*Microsoft Azure*](https://azure.microsoft.com/en-us) or
+    [*Google Cloud*](https://cloud.google.com/).
+
+Today, developers have many terminal windows open on their laptops
+to interact with local and/or remote machines.
+
 Connectivity to remote computers makes software terminals essential in
-modern software development and their basic understanding essential as well.
+modern software development. Hence, developers must understand their
+terminals.
 
 
 ---
 &nbsp;
-### c) ASCII, UTF-8 and ANSI Escape Codes
+### d) ASCII, UTF-8 and ANSI Escape Codes
 
 Initially, hardware terminals had limited capabilities to display only
 Latin letters, numbers and symbols such as `.`, `+` or `$`.
@@ -174,7 +190,7 @@ This principle is used to color terminal output and also the terminal prompt.
 
 ---
 &nbsp;
-### d) What is a *Shell*?
+### e) What is a *Shell*?
 
 A ["*Shell*"](https://www.datacamp.com/blog/what-is-shell) is a process
 the reads input from `stdin` (e.g. a keyboard connected to the terminal),
@@ -345,7 +361,7 @@ of process 3 and `stdin` of process 4 with the pipe.
 
 ---
 &nbsp;
-### e) Which *Shell* do I use?
+### f) Which *Shell* do I use?
 
 Many *shells* have emerged over the years, starting with the initial
 *Bourne Shell: sh* (after its creator:
@@ -377,7 +393,7 @@ pre-installed that differs to other shells in some details.
 
 ---
 &nbsp;
-### f) Hall-of-Fame
+### g) Hall-of-Fame
 
 The Unix Operating system is the most influencial technical innovation
 in the field of software systems in the second half of the 20th century.
@@ -433,6 +449,8 @@ For their contributions, *Ken Thompson* and *Dennis Ritchie* received the
 - [2] Seth Kenlon,
     [*Getting started with Zsh*](https://opensource.com/article/19/9/getting-started-zsh),
     (2019).
+
+- [3] David Farrell: [*An Introduction to Tmux*](https://www.perl.com/article/an-introduction-to-tmux/), (2016).
 
 ---
 &nbsp;

@@ -68,7 +68,9 @@ factor software development.
 
 ### Further Reading
 
-- [7] Daniel P. Bovet, Marco Cesati: [*Understanding the Linux Kernel*](https://www.amazon.de/-/en/Daniel-P-Bovet/dp/0596002130),
+- [7] David Farrell: [*An Introduction to Tmux*](https://www.perl.com/article/an-introduction-to-tmux/), (2016).
+
+- [8] Daniel P. Bovet, Marco Cesati: [*Understanding the Linux Kernel*](https://www.amazon.de/-/en/Daniel-P-Bovet/dp/0596002130),
 ([pdf](https://www.cs.utexas.edu/~rossbach/cs380p/papers/ulk3.pdf)), 3rd Ed., (2006).
 
 
