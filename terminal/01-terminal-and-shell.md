@@ -19,20 +19,43 @@ keyboard for input.
 
 The figure shows a
 [VT100](https://en.wikipedia.org/wiki/VT100) terminal by Digital Equipment
-Corporation (DEC, 1978). The unit is *not* a PC. It only contains a screen
-and keyboard. It must be connected to a separate computer.
+Corporation (DEC, 1978). The unit is **not a PC**. It only contains
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/9/9f/DEC_VT100_terminal_transparent.png" width="400"/>
+- a *screen* to show alphanumerical output (lines) and
 
-Today, many terminal windows can be put on a laptop and also connect to
-other computers, virtual machines (VM) or containers (Docker) over the
-network.
+- a *keyboard* to type input (lines).
 
+The terminal must be connected to a separate computer (e.g. a
+[DEC VAX](https://fedtechmagazine.com/article/2017/07/decs-vax-superminicomputer-became-mainstay-federal-research)).
+
+<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgRU1CEK8zqx7af1U20cQtCEHbmMehGdr0trYp1DvlIAwQPTvj2Gut4ZTBpyc-8E2SFLum83-wL2RPwno_HJpGSLFivxHP0fs5OhoFvIHG9nGz8wcdNyrRpwV3R-MbWSt5rWJX0CCcfWA/s1600/dec-vt100-1.jpg" width="400"/>
+
+Interacting with a computer by text-line input and output is the most
+basic form of human-machine interaction.
+
+A *(Software-) Terminal* emulates line-based text input and output
+in a window. Terminals then connect to a large range of *"computers"*,
+which include:
+
+- the local system (laptop), but also
+
+- to [Virtual Machines (VM)](https://www.vmware.com/topics/virtual-machine)
+    or [Containers (Docker)](https://www.docker.com/resources/what-container/)
+    running on the local system or
+
+- are running on remote systems connected over the network, e.g. running
+    on a *Compute Cloud* such as
+    [*Amazon EC2*](https://aws.amazon.com/ec2/)
+    [*Microsoft Azure*](https://azure.microsoft.com/en-us) or
+    [*Google Cloud*](https://cloud.google.com/).
+
+Today, developers use many terminal windows on their laptops to interact
+with local and/or remote machines.
 There is a large list of terminal software also known as
 [terminal emulators](https://en.wikipedia.org/wiki/List_of_terminal_emulators).
 
-Linux, MacOS have decent terminal software pre-packaged (simply open a
-*"Terminal"*).
+Linux, MacOS have decent terminal software pre-installed (simply *"open a
+Terminal"*).
 
 Windows does not package decent terminal software (*cmd.com*, *powershell.exe*
 are incompatible and cannot work over the network).
