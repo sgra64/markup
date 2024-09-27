@@ -48,9 +48,12 @@ remote *machines*, *virtual machines* or *containers*.
 There is a long list of terminal software also known as
 [terminal emulators](https://en.wikipedia.org/wiki/List_of_terminal_emulators).
 
-[Tmux](https://www.perl.com/article/an-introduction-to-tmux/) [3] is a
-*terminal multiplexer* that allows to split a terminal into multiple panes
-and run a terminal session in each pane.
+- [putty](https://www.putty.org) - a terminal emulator that allows remote
+    login over various protocols, but does not provide a local terminal.
+
+- [Tmux](https://www.perl.com/article/an-introduction-to-tmux/) [3] is a
+    *terminal multiplexer* that allows to split a terminal into multiple panes
+    and run a terminal session in each pane.
 
 Linux, MacOS have decent terminal software pre-installed (simply *"open a
 Terminal"*).
@@ -65,8 +68,9 @@ Good choices for terminal software for Windows are:
     that includes a terminal emulator:
     [mintty.exe](https://en.wikipedia.org/wiki/Mintty) (preferred).
 
-- [putty](https://www.putty.org) - a terminal emulator that allows remote
-    login over various protocols, but does not provide a local terminal.
+- [GitBash](https://gitforwindows.org/) also includes a terminal emulator
+    (`git-bash.exe`) - `GitBash` has some short-comings over `cygwin`
+    on Windows, hence `cygwin` should be preferred.
 
 
 ---
