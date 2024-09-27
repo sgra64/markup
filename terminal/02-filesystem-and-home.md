@@ -1,6 +1,6 @@
 ## 2. *Filesystem* and *$HOME* directory
 
-Topics
+Topics:
 - a) [What is a *filesystem*?](#a-what-is-a-filesystem)
 - b) [How is a *filesystem* organized (*files, directories, mounts, links*)?](#b-how-is-a-filesystem-organized)
 - c) [What is and where is my *$HOME* directory?](#c-what-is-and-where-is-my-home-directory)

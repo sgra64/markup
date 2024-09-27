@@ -1,6 +1,6 @@
 ## 3. *Processes* and *Environment Variables*
 
-Topics
+Topics:
 - a) [Process creation and inheritance](#a-process-creation-and-inheritance)
 - b) [Global and local *environment variables*](#b-global-and-local-environment-variables)
 - c) [Variables: *$HOME*, *$PATH*](#c-variables-home-path)

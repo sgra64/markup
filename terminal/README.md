@@ -23,7 +23,8 @@ factor software development.
     - Variables: *$HOME*, *$PATH*.
 
 1. [*Dotfiles*](04-dotfiles.md)
-    - Role and Execution order of *profile*, *rc* and *logout* files:
+    - Role of *profile*, *rc* and *logout* files
+    - Execution order
         - *.profile* (Mac: *.zprofile* )
         - *.bashrc* (Mac: *.zshrc*)
         - *.bash_logout* (Mac: *.zlogout*)
@@ -31,8 +32,8 @@ factor software development.
     - *Sourcing* dotfiles
 
 1. [*Aliases* and *Functions*](05-aliases-and-functions.md)
-    - Role of command *alias*
-    - Role of *function()*
+    - What is an *alias*?
+    - What is a *shell function()*?
 
 
 &nbsp;

@@ -1,6 +1,6 @@
 ## 1. *Terminal* and *Shell*
 
-Topics
+Topics:
 - a) [What is a Terminal?](#a-what-is-a-terminal)
 - b) [What is a Software-Terminal?](#b-what-is-a-software-terminal)
 - c) [Why are terminals relevant today?](#c-why-are-terminals-relevant-today)
