@@ -155,11 +155,9 @@ Microsoft introduced its own version called
 in 1988, which is still present in Windows today.
 
 [UTF-8](https://en.wikipedia.org/wiki/UTF-8) (*Unicode*,
-[*Ken Thompson*](https://en.wikipedia.org/wiki/Ken_Thompson),
-[*Rob Pike*](https://en.wikipedia.org/wiki/Rob_Pike), 1992) is a code
-that uses 8-bit (UTF-8) coding for base characters (compatible to ASCII [0 - 127])
-and flexibile `2`, `3` or `4` byte coding if the highest bits `1`, `11` or `111`
-in the preceeding byte are set.
+Ken Thompson, Rob Pike, 1992) is a code that uses 8-bit (UTF-8) coding for base
+characters (compatible to ASCII [0 - 127]) and variable `2`, `3` or `4` byte
+coding if the highest bits `1`, `11` or `111` in the preceeding byte are set.
 
 The Euro (`€`) symbol is represented in:
 - UTF-8  Encoding: `0xE2 0x82 0xAC`
@@ -180,12 +178,12 @@ With ANSI, so-called *"escape sequences"* starting with the `ESC` character
 e.g. a color: `[31;1` can be issued to the terminal to switch color for the
 following characters.
 
-For example, in order to display text underlined and in red, an escape
-sequence: `"\033[31;1;4m"` must be issued before the text (`"World"`).
+For example, in order to display text in red, an escape
+sequence: `"\033[31;1m"` must be issued before the text (`"World"`).
 After the text, the terminal should be reset with: `"\033[0m"`:
 
 ```sh
-echo -ne "Hello \033[31;1;4m World \033[0m ! \n"
+echo -ne "Hello \033[31;1mWorld\033[0m! \n"
 ```
 This principle is used to color terminal output and also the terminal prompt.
 
@@ -216,7 +214,7 @@ Output:
 
 ```
 pwd
-/c/Sven1/svgr2/markup
+/c/Sven1/svgr2
 
 ls -la
 total 415
@@ -239,16 +237,12 @@ drwxr-xr-x 1 svgr2 Kein      0 Sep 21 18:42 .ssh
 -rw-r--r-- 1 svgr2 Kein   4152 Sep 22 13:07 .zshrc
 -rw-r--r-- 1 svgr2 Kein 102400 Sep 21 19:38 24-0921-git.tar
 -rw-r--r-- 1 svgr2 Kein 102400 Sep 21 19:16 24-0921-git_BACKUP.tar
--rw-r--r-- 1 svgr2 Kein 102400 Sep 21 18:22 24-0921-git_BACKUP_2.tar
--rw-r--r-- 1 svgr2 Kein   2053 Sep  1 19:47 Context_menu.txt
 -rw-r--r-- 1 svgr2 Kein    898 Sep 21 20:59 README.md
 lrwxrwxrwx 1 svgr2 Kein     22 Aug 18 21:22 desktop -> /c/Users/svgr2/Desktop
-drwxr-xr-x 1 svgr2 Kein      0 Sep 13 22:06 libs
 drwxr-xr-x 1 svgr2 Kein      0 Sep 24 17:48 markup
 drwxr-xr-x 1 svgr2 Kein      0 Aug 17 14:12 se1-bestellsystem
 drwxr-xr-x 1 svgr2 Kein      0 Sep 24 19:20 tmp
 drwxr-xr-x 1 svgr2 Kein      0 Sep  5 21:00 workspaces
--rw-r--r-- 1 svgr2 Kein  18734 Aug  4 00:32 zsh-git-prompt.sh
 ```
 
 A *shell* process has no information about its environment, to which input
