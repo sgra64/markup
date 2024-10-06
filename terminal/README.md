@@ -58,20 +58,26 @@ factor software development.
 - [4] Stanford Seminar: *Computer Systems CS110*,
     [*Lecture 3: Directories and Links*](https://web.stanford.edu/class/cs110/summer-2021/lecture-notes/lecture-03), (2021).
 
-- [5] Dionysia Lemonaki:
+- [5] Stanford Seminar: *Computer Systems CS110*,
+    [*Lecture 5: Processes*](https://web.stanford.edu/class/cs110/summer-2021/lecture-notes/lecture-05),
+    ([Lecture Notes](https://web.stanford.edu/class/cs110/summer-2021/lecture-notes)), (2021).
+
+- [6] Dionysia Lemonaki:
     [*What are Dotfiles?*](https://www.freecodecamp.org/news/dotfiles-what-is-a-dot-file-and-how-to-create-it-in-mac-and-linux/),
     (2021).
 
-- [6] Stanford Seminar: *Computer Systems CS110*,
-    [*Lecture 5: Processes*](https://web.stanford.edu/class/cs110/summer-2021/lecture-notes/lecture-05),
-    ([Lecture Notes](https://web.stanford.edu/class/cs110/summer-2021/lecture-notes)), (2021).
+- [7] *A Curated List of Awesome Dotfiles*,
+    [[*link*]](https://github.com/webpro/awesome-dotfiles).
+
+- [8] Stackoverflow, *Complete overview of Bash and Zsh startup files sourcing order*, 
+    [[*link*]](https://superuser.com/questions/1840395/complete-overview-of-bash-and-zsh-startup-files-sourcing-order)
 
 
 ### Further Reading
 
-- [7] David Farrell: [*An Introduction to Tmux*](https://www.perl.com/article/an-introduction-to-tmux/), (2016).
+- [9] David Farrell: [*An Introduction to Tmux*](https://www.perl.com/article/an-introduction-to-tmux/), (2016).
 
-- [8] Daniel P. Bovet, Marco Cesati: [*Understanding the Linux Kernel*](https://www.amazon.de/-/en/Daniel-P-Bovet/dp/0596002130),
+- [10] Daniel P. Bovet, Marco Cesati: [*Understanding the Linux Kernel*](https://www.amazon.de/-/en/Daniel-P-Bovet/dp/0596002130),
 ([pdf](https://www.cs.utexas.edu/~rossbach/cs380p/papers/ulk3.pdf)), 3rd Ed., (2006).
 
 
