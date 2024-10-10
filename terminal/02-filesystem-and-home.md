@@ -29,7 +29,7 @@ charges in MOSFET
 [Floating Gate Transistor](https://www.embedded.com/flash-101-types-of-nand-flash)
 to presever information.
 
-Example of a modern 1TB SSD hard disk:
+Example of a modern 1TB SSD:
 
 <img src="https://m.media-amazon.com/images/I/61xMrZtfxuL._AC_SL1500_.jpg" width="400"/>
 
