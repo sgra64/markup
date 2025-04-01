@@ -54,6 +54,9 @@ path conversions that may cause problems, see
         - Editors/`vim` - visual editor,
         - Web/`wget` - web downloader,
         - Net/`curl` - web downloader.
+        - --
+        - Devel/`make` - build tool for *C* -- (*C*-development only),
+        - Devel/`git` - source code management,
 
 
 &nbsp;
