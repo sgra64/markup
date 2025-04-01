@@ -56,6 +56,7 @@ path conversions that may cause problems, see
         - Net/`curl` - web downloader.
         - --
         - Devel/`make` - build tool for *C* -- (*C*-development only),
+        - Devel/`gcc/g++` - *C/C++* compiler tools set,
         - Devel/`git` - source code management,
 
 
