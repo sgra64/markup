@@ -15,6 +15,9 @@ in [*Software Engineering*](https://en.wikipedia.org/wiki/Software_engineering).
 
 1. as [*User Stories*](https://en.wikipedia.org/wiki/User_story).
 
+1. A *Glossary* includes a list of short explanations of terms that are
+    relevant in the context of the scenario.
+
 
 A *"Use Case Document"* is a classic form of describing use cases following
 a certain structure (schema).
@@ -23,21 +26,25 @@ In this section, requirements for the scenario are analyzed in form of a
 use cases document [*UC-CRS.md*](UC-CRS.md) that follows the structure with
 sections:
 
-1. **System Overview:** *Freerider.de* is a *Car-Rental-System (CRS)* system
+
+ #### 1. **System Overview:**
+
+*Freerider.de* is a *Car-Rental-System (CRS)* system
 that manages a fleet of cars mainly in cities without permanent stations.
 Cars are parked in public spaces when not used. Customer can reserve vehicles
 at particular times and locations. Car pick-up and return are fully handled
 over customer mobile phones. Staff (Rental agents) are only involved in cases
 of technical problems, damage, theft or traffic accidents.
 
-2. **Actors & Roles:**
+
+#### 2. **Actors & Roles:**
 
 This section names actors and roles that have use cases with the system.
 <!-- *Guest (Unregistered)*, *Customer (Registered)*, *Rental Agent*,
 *Fleet Manager*, *System Administrator*, *Payment Gateway*,
 *DMV / Verification Service*. -->
 
-3. **Use Case Index**
+#### 3. **Use Case Index**
 
 This section lists the use cases included in the document.
 
@@ -61,34 +68,37 @@ use case *UC-01* in the document [*UC-CRS.md*](UC-CRS.md).
 
 *Task 1:*
 
-What is a *stake holder* in requirement engineering?
+Answer questions:
 
-What is an *actor* in requirement engineering?
+1. What is a *stake holder* in requirement engineering?
 
-Name three *stake holders* in the scenario and three *actors*.
+1. What is an *actor* in requirement engineering?
+
+1. Name three *stake holders* in the scenario and three *actors*.
 
 
 &nbsp;
 
 *Task 2:*
 
-Choose five use cases that have not been completed and complete them.
-Choose one use case from the *100's*, one from the *200's*, one from the *300's*
-categories and use cases *400* and *410*.
+Choose five use cases from the list above and complete them. Choose one
+use case from the *100's* (except *UC-100*), one from the *200's*, one
+from the *300's* categories as well as use cases *400* and *410*.
+Complete them.
 
 For each use case, name at *least one* pre-condition and *one* post-condition
 and describe *at least one* alternative/error path.
 
 Prepare use cases in *hand-writing* (machine-typed or AI-generated text is not
-accepted). You may print and use [*UC-CRS-template.docx*](UC-CRS-template.docx) or
-[*UC-CRS-template.pdf*](UC-CRS-template.pdf).
+accepted). You may print and use [*UC-CRS-template.docx*](UC-CRS-template.docx)
+or [*UC-CRS-template.pdf*](UC-CRS-template.pdf).
 
 
 &nbsp;
 
 *Task 3:*
 
-Name five more use cases for the scenario (only *ID* and *title*).
+Add five more use cases to the list. Only name their *ID* and *title*.
 
 
 &nbsp;
@@ -110,9 +120,13 @@ Example:
 
 ```
 Glossary:
-Vehicle: car, mini-bus or motorcycle a customer reserves and rents.
-Customer: ...
-...
-...
+
+- Back Office: actor that represents and coordinates activities on behalf of
+    freerider.de, e.g. approves car reservation requests, new customers, etc.
+
+- Vehicle: car, mini-bus or motorcycle a customer reserves and rents.
+
+- Customer: ...
+
 ...
 ```

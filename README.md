@@ -104,9 +104,9 @@ theft or traffic accidents.
 
 Understand the car rental scenario and complete tasks:
 
-- [*B1: Use Cases*](README-B1.md), 5 Pkt.
+- [*B1: Use Cases, Glossar*](README-B1.md), 4 Pkt.
 
-- [*B2: Use Case Diagramm*](README-B2.md), 5 Pkt.
+- [*B2: UML Use Case Diagram*](README-B2.md), 4 Pkt.
 
 - [*B3: User Stories*](README-B3.md), 3 Pkt.
 

@@ -1,0 +1,13 @@
+### Szenario des Fahrzeug-Reservierungssystems *freerider.de*
+
+*freerider.de* ist ein Autovermietungs- und Carsharing-Unternehmen, das eine Fahrzeugflotte hauptsächlich in Städten ohne feste Stationen betreibt. Bei Nichtgebrauch werden die Fahrzeuge im öffentlichen Raum geparkt. Das System erfasst die Standorte der Fahrzeuge kontinuierlich per GPS. Wenn ein Kunde zu einer bestimmten Zeit an einem bestimmten Ort ein Fahrzeug wünscht, stellt *freerider.de* im Rahmen einer bestehenden Reservierung ein Auto zur Verfügung.
+
+Kunden können einen Katalog von Fahrzeugen und Zielorten durchsuchen, um Fahrzeuge in den gewünschten Zeiträumen abzuholen und zurückzugeben. Der Kunde kann eine Anfrage für ein Fahrzeug einer bestimmten Klasse (Kleinwagen, Mittelklasse, Oberklasse, Cabriolet, SUV usw.) an einem bestimmten Ort zu einer gewünschten Zeit für einen gewünschten Zeitraum erstellen und diese Anfrage an das System senden. Das System beantwortet die Anfrage mit einem Angebot inklusive Preis oder schlägt eine passende Alternative vor, falls die Anfrage nicht vollständig erfüllt werden kann. Das System hält das Angebot für 10 Minuten aufrecht, innerhalb derer der Kunde die Reservierung annehmen oder ablehnen kann. Um eine Reservierung abzuschließen, ist eine Zahlung erforderlich.
+
+Änderungen der Reservierung (Zeit, Fahrzeugklasse, Stornierung) müssen vom Kunden angefordert werden und bedürfen der Genehmigung durch das System. Von *freerider.de* veranlasste Änderungen werden dem Kunden mit einem Alternativvorschlag oder einer Entschädigung mitgeteilt. Der Kunde entscheidet, welche Option er wählt.
+
+Wenn der Zeitpunkt der Abholung gekommen ist, nähert sich der Kunde dem Fahrzeug und fordert über sein Mobiltelefon die Öffnung an. Das System prüft die Reservierung und öffnet das Auto bei Gültigkeit. Das Fahrzeug erstellt automatisch einen Zustandsbericht mit Kilometerstand, Kraftstoff- bzw. Batteriestand, GPS-Standort und technischen Daten. Der Kunde kann den Bericht auf seinem Telefon einsehen sowie Kommentare und Fotos hinzufügen. Das Fahrzeug ist nun betriebsbereit.
+
+Bei der Rückgabe des Fahrzeugs fordert der Kunde die Rückgabe über sein Telefon an. Das System veranlasst daraufhin die Erstellung eines Rückgabeberichts durch das Fahrzeug – wiederum mit Kilometerstand, Kraftstoffstand, GPS-Standort und technischen Daten. Der Kunde kann den Bericht öffnen, einen Kommentar sowie Fotos hinzufügen. Wenn der Kunde die Tür schließt, wird das Auto verriegelt.
+
+Fahrzeugabholung und -rückgabe werden vollständig über das Mobiltelefon des Kunden abgewickelt. Mitarbeiter (Serviceagenten) werden nur bei technischen Problemen, Schäden, Diebstahl oder Verkehrsunfällen hinzugezogen.
