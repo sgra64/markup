@@ -1,8 +1,9 @@
 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 ## B1-B4: *Requirements Analysis* -- *What* does the *User* want?
 
-*Requirements* are formalized (written) and with all stakeholder agreed
-*expectations* of a software product *before* software development starts.
+*Requirements* are formalized (written) and with all stakeholders agreed
+*expectations* of a (software) product. *Requirements* need to be clarified
+*before* software development starts.
 
 The goal of *Requirements Analysis* is:
 
@@ -15,17 +16,18 @@ The goal of *Requirements Analysis* is:
     *before* software development begins.
 
 1. to develop a unified (domain) terminology that is accepted by all stakeholders
-    (glossary).
+    ([*Glossary*](GLOSSARY.md)).
 
-1. to derive concrete specifications of a system to build.
+1. to derive concrete specifications of *what* to build for a system.
 
 *Requirements Analysis* is a commuication-intensive process aimed at clarifying
-*what* a software system should do, not *how* it does it.
+*what* a software system is expected to do, not *how* it is going to achieve it.
 
-Audience of *Requirements Analysis* are people, hence *quality* and *quantity*
-of produced material matters. *Artificial Intelligence* can help to summarize and
-rationalize content and to find contradictions and errors.
+Audience of *Requirements Analysis* are stakeholders (people), hence *quality*
+and (human-consumable) *quantity* of produced material matters.
 
+
+&nbsp;
 
 *Requirements Analysis* considers two perspectives:
 
@@ -59,43 +61,48 @@ has been implemented. Sometimes, a term
 *freerider.de* is a car rental / car sharing company that operates a fleet of
 cars mainly in cities without permanent stations. Cars are parked in public
 spaces when not used. The system permanently tracks car locations by GPS.
-If a customer wishes a vehicle at a particular time at a particular location,
-*freerider.de* will make a car available with an existing reservation.
+Vehicle can be reserved at particular times and locations.
+If a reservation is accepted, the vehicle will be made available at the
+requested time and location.
 
-Customers can search a catalog of cars and destinations to pick-up and return
-(drop) vehicles at desired time-frames. The customer can create an inquiry for
-a vehicle of a certain class (small, mid, large sedan, convertible, SUV, etc.),
-at a specific location at a desired time for a desired period and send this
-inquiry to the system. The system answers the inquiry with an offer, including
-price, or suggests a close match, if the inquiry cannot fully be met. The
-system holds the offer for 10 minutes, within which the the customer can accept
-the reservation or reject. Payment is required to to finalize a reservation.
+Customers can search a catalog of cars (small, mid, large sedan, convertible,
+SUV, etc.) and *select* a destination to pick-up and return (drop) the vehicle
+at desired times. Then, the customer sends an *inquiry* with the selection to
+the system asking to price and confirm the reservation. The system answers the
+inquiry with an *offer*, including the final price, or suggests a close match,
+if the inquiry cannot fully be met. The system holds the offer for 10 minutes,
+within which the the customer can accept or reject the offer. If accepted,
+payment is required to finalize the *reservation*.
 
-Reservation changes (time, car-class, cancellation) must be requested by the
-customer and need to be approved by the system. Changes initiated by
-*freerider.de* are communicated to the customer with a proposed alternative
-or compensation. The customer decides which option to choose.
+Changes to reservations (times, locations, car-class) or cancellations can
+be requested by a cutsomer and need to be approved by the system. If they
+cause price changes (e.g. for a different car class), they need approval by
+the customer.
+Changes or cancellations initiated by *freerider.de* are communicated to the
+customer with a proposed alternative or compensation. The customer decides
+which option to choose.
 
-When the time of pickup has arrived, the customer approaches the vehicle and
-requests to open from his mobile phone. The system verifies the reservation and
-opens the car if valid. A report of the car's condition is prepared by the car
-with km, fuel level (gas, battery), GPS-location and technical data. The customer
-can inspect the report on his phone, add comments and photos. The car is ready
+When the customer approaches the vehicle at the time of pickup, he requests
+*freerider.de* to open the vehicle from his mobile phone. The system verifies
+the reservation and requests the customer presenting a valid driver's license
+of him or herself or of the driver who is going to drive the car. The driver's
+license is presented to the mobile phone's camera. The system may ask to also
+make a photo of the driver in order to validate the license. If the license
+is recognized, the system opens the car.
+At this time, the car creates the pick-up report of the car's condition with
+km, fuel level, GPS-location and other technical data. The customer can inspect
+the report on his mobile phone, add comments and photos. The car is ready
 for use.
 
-When returning the car, the customer requests the return on his phone. The
-system then initiates that a return-report is created by the car, again with
-km, fuel level, GPS-location and technical data. The customer can open the
-report, add a comment and photos. When the customer closes the door, the
-car is locked.
+For returning the car, the customer sends a return-requests from his phone.
+The system then initiates the car to create the return-report with km, fuel
+level, GPS-location and other technical data. The customer can open the report,
+add comments and photos. When the customer closes the door, the car is locked.
 
-Car pick-up and return are fully handled by the system. In case of a problem
-or a traffic accident, a rental agent (staff member) is contacted to handle
-the case with full access to all documents.
-
-Car pick-up and return are fully handled over customer mobile phones. Staff
-(Rental agents) are only involved in cases of technical problems, damage,
-theft or traffic accidents.
+Car pick-up and return are fully handled remotely by the system. In case of
+technical problems, damage, theft or traffic accidents, the customer notifies
+*freerider.de* and a rental agent (staff) will handle the case with full access
+to all documents.
 
 
 &nbsp;
@@ -104,15 +111,15 @@ theft or traffic accidents.
 
 Understand the car rental scenario and complete tasks:
 
-- [*B1: Use Cases*](README-B1.md), 5 Pkt.
+- [*B1: Use Cases, Glossar*](README-B1-Use-Cases-Glossary.md), 4 Pkt.
 
-- [*B2: Use Case Diagramm*](README-B2.md), 5 Pkt.
+- [*B2: UML Use Case Diagram*](README-B2-Use-Case-Diagram.md), 4 Pkt.
 
-- [*B3: User Stories*](README-B3.md), 3 Pkt.
+- [*B3: User Stories*](README-B3-User-Stories.md), 3 Pkt.
 
-- [*B4: Functional and Non-functional Rquirements*](README-B4.md), 3 Pkt.
+- [*B4: Functional and Non-functional Rquirements*](README-B4-FA-NFA.md), 3 Pkt.
 
-- [*B5: Business Process: New Customer Registration*](README-B5.md), 5 Pkt.
+- [*B5: Business Process: New Customer Registration (individual)*](README-B5-BP-Registration), 5 Pkt.
 
-- [*B6: Business Process: Car Reservation*](README-B6.md), 5 Pkt.
+- [*B6: Business Process: Car Reservation*](README-B6-BP-Reservation), 5 Pkt.
 

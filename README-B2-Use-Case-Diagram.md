@@ -21,8 +21,8 @@ on paper or with a pen on a screen of a laptop or tablet.
 
 &nbsp;
 
-*Task 1:* Name the five *main use cases* of the car reservation system and draw a
-*UML - Use Case Diagram* for these use cases.
+*Task 1:* Name the five *main use cases* of the car reservation scenario and
+draw a *UML - Use Case Diagram* for these use cases.
 
 
 &nbsp;
@@ -30,11 +30,16 @@ on paper or with a pen on a screen of a laptop or tablet.
 *Task 2:* Draw a *UML - Use Case Diagram* showing use cases of registration and
 un-registration of a customer.
 
+Include that a 
+
 
 &nbsp;
 
 *Task 3:* Draw a *UML - Use Case Diagram* detailing the steps of a reservation
 according to the scenario in [*README.md*](README.md#context-scenario).
+
+Include also cases of requesting an update of an existing reservation
+that require approval of the central agency.
 
 
 &nbsp;

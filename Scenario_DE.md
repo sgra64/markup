@@ -1,0 +1,16 @@
+### Szenario des Fahrzeug-Reservierungssystems *freerider.de*
+
+*freerider.de* ist ein Autovermietungs- bzw. Carsharing-Anbieter, der eine Fahrzeugflotte betreibt – vorwiegend in Städten - ohne feste Stationen. Bei Nichtgebrauch werden die Fahrzeuge im öffentlichen Raum abgestellt. Das System erfasst kontinuierlich per GPS den Standort der Fahrzeuge. Fahrzeuge können für bestimmte Zeiten und Orte reserviert werden.
+Wird eine Reservierung akzeptiert, steht das Fahrzeug zum gewünschten Zeitpunkt am gewünschten Ort zur Verfügung.
+
+Kunden können aus einem Fahrzeugkatalog (Kleinwagen, Mittelklasse, Limousine, Cabrio, SUV usw.) wählen und einen Ort für die Abholung sowie für die Rückgabe festlegen. Anschließend sendet der Kunde eine Anfrage an das System, um die Reservierung bestätigen zu lassen und den finalen Preis zu erfahren. Das System antwortet mit einem Angebot, das den Endpreis enthält. Kann die Anfrage nicht exakt erfüllt werden, schlägt das System eine Alternative vor. Das Angebot bleibt 10 Minuten lang gültig. Innerhalb dieses Zeitraums kann der Kunde es annehmen oder ablehnen. Bei Annahme ist die Bezahlung erforderlich, um die Reservierung verbindlich abzuschließen.
+
+Änderungen von Reservierungen (Zeitpunkt, Ort, Fahrzeugklasse) oder Stornierungen können vom Kunden angefragt werden und bedürfen der Bestätigung durch das System. Sollten sich dadurch Preisänderungen ergeben (etwa bei einer anderen Fahrzeugklasse), muss der Kunde diesen zustimmen.
+Änderungen oder Stornierungen, die von *freerider.de* ausgehen, werden dem Kunden mit einem Alternativvorschlag oder einem Kompensationsangebot mitgeteilt. Der Kunde entscheidet, welche Option er wählt.
+
+Wenn der Kunde zum Zeitpunkt der Abholung zur Übernahme am Fahrzeug eintrifft, fordert er über sein Mobiltelefon an, dass *freerider.de* das Fahrzeug entriegelt. Das System überprüft die Reservierung und fordert den Kunden auf, einen gültigen Führerschein – entweder seinen eigenen oder den der Person, die das Fahrzeug fahren wird – vor der Kamera des Mobiltelefons zu präsentieren. Zur Validierung des Führerscheins kann das System ein Foto des Fahrers anfordern. Sobald der Führerschein erfolgreich erkannt wurde, entriegelt das System das Fahrzeug.
+Zu diesem Zeitpunkt erstellt das Fahrzeug ein Übergabeprotokoll, das den Zustand des Wagens, den Kilometerstand, den Kraftstoffstand, den GPS-Standort sowie weitere technische Daten enthält. Der Kunde kann dieses Protokoll auf seinem Mobiltelefon einsehen und bei Bedarf Kommentare oder Fotos hinzufügen. Das Fahrzeug ist nun einsatzbereit.
+
+Zur Rückgabe des Fahrzeugs sendet der Kunde über sein Mobiltelefon eine entsprechende Rückgabeanforderung. Das System veranlasst daraufhin, dass das Fahrzeug ein Rückgabeprotokoll erstellt mit Kilometerstand, Kraftstoffstand, GPS-Position und weiterer technischer Daten. Der Kunde kann diesen Bericht einsehen und Kommentare und Fotos hinzufügen. Sobald der Kunde die Tür schließt, wird das Fahrzeug verriegelt.
+
+Die Fahrzeugübergabe und -rückgabe werden vollständig über das System abgewickelt. Bei technischen Problemen, Schäden, Diebstahl oder Verkehrsunfällen benachrichtigt der Kunde *freerider.de*. Ein Mitarbeiter kümmert sich anschließend um den Vorfall mit vollem Zugriff auf alle relevanten Dokumente.

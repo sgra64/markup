@@ -22,10 +22,11 @@ tools for agency staff and administrators.
 | **Customer (Registered)** | Primary | Browses inventory, books reservations, manages profile, and processes payments. |
 | **Rental Agent** | Primary | Handles vehicle pickup/return processes, verifies documentation, and inspects vehicles. |
 | **Car** | Primary | Creates pick-up and return report. Sends the report to the system and also GPS-location data every 5 minutes. |
-<!-- | **Fleet Manager** | Primary | Manages vehicle inventory, maintenance schedules, and pricing rates. | -->
 | **System Administrator** | Primary | Manages user accounts, roles, system parameters, and system logs. |
-| **Payment Gateway** | External System | Processes credit/debit card transactions and refunds securely. |
+| **Payment Provider** | External System | Processes credit/debit card transactions and refunds securely. |
 | **DMV / Verification Service** | External System | Verifies driver's license validity and driving history (optional integration). |
+
+<!-- | **Fleet Manager** | Primary | Manages vehicle inventory, maintenance schedules, and pricing rates. | -->
 
 
 ---
@@ -117,8 +118,8 @@ class for a specified timeframe and pickup and return locations.
 6. Customer inputs driver details (Name, Contact, Driver’s License Number) or logs into an existing account.
 7. System calculates final price including taxes, fees, and selected options.
 8. Customer enters payment information.
-9. System contacts Payment Gateway to authorize payment or place a hold.
-10. Payment Gateway confirms authorization.
+9. System contacts Payment Provider to authorize payment or place a hold.
+10. Payment Provider confirms authorization.
 11. System creates the reservation, assigns a unique Reservation ID, updates vehicle availability, and displays the receipt to the Customer.
  -->
 
