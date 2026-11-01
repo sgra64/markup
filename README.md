@@ -1,5 +1,5 @@
 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-## B1-B4: *Requirements Analysis* -- *What* does the *User* want?
+## B1-B6: *Requirements Analysis* -- *What* does the *User* want?
 
 *Requirements* are formalized (written) and with all stakeholders agreed
 *expectations* of a (software) product. *Requirements* need to be clarified
@@ -101,7 +101,7 @@ add comments and photos. When the customer closes the door, the car is locked.
 
 Car pick-up and return are fully handled remotely by the system. In case of
 technical problems, damage, theft or traffic accidents, the customer notifies
-*freerider.de* and a rental agent (staff) will handle the case with full access
+*freerider.de* and a service agent (staff) will handle the case with full access
 to all documents.
 
 
@@ -119,7 +119,7 @@ Understand the car rental scenario and complete tasks:
 
 - [*B4: Functional and Non-functional Rquirements*](README-B4-FA-NFA.md), 3 Pkt.
 
-- [*B5: Business Process: New Customer Registration (individual)*](README-B5-BP-Registration), 5 Pkt.
+- [*B5: Business Process: New Customer Registration (individual)*](README-B5-BP-Registration.md), 5 Pkt.
 
-- [*B6: Business Process: Car Reservation*](README-B6-BP-Reservation), 5 Pkt.
+- [*B6: Business Process: Car Reservation*](README-B6-BP-Reservation.md), 5 Pkt.
 

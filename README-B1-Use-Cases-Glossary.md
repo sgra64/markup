@@ -28,7 +28,7 @@ use cases document [*UC-CRS.md*](UC-CRS.md) that follows the structure with
 sections:
 
 
- #### 1. **System Overview:**
+#### 1. **System Overview:**
 
 *Freerider.de* is a *Car-Rental-System (CRS)* system
 that manages a fleet of cars mainly in cities without permanent stations.
@@ -37,15 +37,19 @@ at particular times and locations. Car pick-up and return are fully handled
 over customer mobile phones. Staff (Rental agents) are only involved in cases
 of technical problems, damage, theft or traffic accidents.
 
+#### 2. Stakeholders
 
-#### 2. **Actors & Roles:**
+This section names *stakeholders* as individuals, groups, or organizations
+involved in decision making, investment or oversigh, but who are not primary
+users of the system.
 
-This section names actors and roles that have use cases with the system.
-<!-- *Guest (Unregistered)*, *Customer (Registered)*, *Rental Agent*,
-*Fleet Manager*, *System Administrator*, *Payment Gateway*,
-*DMV / Verification Service*. -->
+#### 3. Actors & Roles
 
-#### 3. **Use Case Index**
+This section names *actors* and *roles* representing users and anything that
+interacs with a system. *Primary actors* represent targeted user groups
+while *Secondary actors* represent entities needed for operation.
+
+#### 4. **Use Case Index**
 
 This section lists the use cases included in the document.
 
@@ -60,12 +64,25 @@ This section lists the use cases included in the document.
 - **UC-410:** *Unregister Customer*
 - **UC-500:** *Manage Fleet Inventory*
 - **UC-550:** *Permanently send GPS-location*
+- ...
+
+#### 5. Detailed Use Cases
+
+This section contains detailed descriptions of use cases, each following the
+same template:
+[UC-CRS-template.docx](UC-CRS-template.docx) /
+[UC-CRS-template.pdf](UC-CRS-template.pdf).
 
 
 &nbsp;
 
-**Task:** Understand the car rental scenarion. Understand the description of
-use case *UC-01* in the document [*UC-CRS.md*](UC-CRS.md).
+---
+
+**Tasks:** Understand the [*vehicle reservation scenario*](Scenario_EN.md).
+
+Understand the description of use case *UC-100: *Reserve a Vehicle* in document
+[*UC-CRS.md*](UC-CRS.md).
+
 
 *Task 1:*
 
@@ -82,26 +99,45 @@ Answer questions:
 
 *Task 2:*
 
-Choose three (3) use cases from the list above and complete them. Choose one
-use case from the *100's* (except *UC-100*), one from the *200's*, one
-from the *400's* categories. Complete them.
+Choose three (3) use cases from the list above and complete them following
+the same template:
+[UC-CRS-template.docx](UC-CRS-template.docx) /
+[UC-CRS-template.pdf](UC-CRS-template.pdf).
 
-Name at *least one* pre-condition and *at least one* post-condition (state
-after the use case) in section 2.
+Choose one use case from the *100's* (except *UC-100*), one from the *200's*,
+one from the *400's* categories and complete them.
 
-For section 3, describe steps for the *success scenario* *(Happy Path)* of the
-use case and describe *at least one* alternative or error path.
+Name at *least one* pre-condition and *at least one* post-condition
+in section 2.
 
-Prepare use cases in *hand-writing* (machine-typed or AI-generated text is not
-accepted). You may print and use [*UC-CRS-template.docx*](UC-CRS-template.docx)
-or [*UC-CRS-template.pdf*](UC-CRS-template.pdf).
+For section 3, describe steps for the *success scenario* *("Happy Path")*
+of the use case and describe *at least one* error path.
+
+You may print and use templates.
 
 
 &nbsp;
 
 *Task 3:*
 
-Add five more use cases to the list (only name the *ID* and *title*).
+Add five more use cases (only name the *ID* and *title*) to the section with
+the *Use Case Index*.
+
+<!-- 
+add 5 more use cases:
+- UC-130 Transfer Reservation to other Customer
+
+- UC-202 Validate Driver's License at Pickup
+- UC-203 Validate Driver's Soberness at Pickup
+
+- UC-320 Report Damage at Return
+- UC-321 Manage Damage Report (Modify)
+- UC-322 Manage Damage Report (Cancel)
+- UC-330 Dispute Damage Claim at Return
+
+- UC-410 Unregister Customer (self)
+- UC-411 Unregister Customer (by System)
+-->
 
 
 &nbsp;

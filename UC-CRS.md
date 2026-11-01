@@ -1,39 +1,81 @@
 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-<!-- 
-Gemini: Can you give me a fully written-out use case document for a car rental system a markdown document?
- -->
+# Requirements Document for *Freerider.de*
 
-# Use Case Specification Document: Car-Rental-System *Freerider.de*
+This document provides the *specifications of requriements* (use cases) for
+the *freerider.de* car sharing system.
+The document follows a structure:
+
+1. [*System Overview*](#1-system-overview)
+
+1. [*Stakeholders*](#2-stakeholders)
+
+1. [*Actors & Roles*](#3-actors--roles)
+
+1. [*Use Case Index*](#4-use-case-index)
+
+1. [*Detailed Use Cases*](#5-detailed-use-cases)
+
+
+&nbsp;
 
 ## 1. System Overview
 
-**Freerider.de** is a *Car-Rental-System (CRS)* with an integrated web and
-mobile platform that allows customers to search for, reserve, modify, and pay
-for rental vehicles. It also provides fleet management, billing, and reporting
-tools for agency staff and administrators.
+*Freerider.de* is a *Car-Rental-System (CRS)* system
+that manages a fleet of cars mainly in cities without permanent stations.
+Cars are parked in public spaces when not used. Customer can reserve vehicles
+at particular times and locations. Car pick-up and return are fully handled
+over customer mobile phones. Staff (Rental agents) are only involved in cases
+of technical problems, damage, theft or traffic accidents.
 
----
 
-## 2. Actors & Roles
+&nbsp;
 
-| Actor | Type | Description |
-| :--- | :--- | :--- |
-| **Guest (Unregistered)** | Primary | Browses inventory, can register. |
-| **Customer (Registered)** | Primary | Browses inventory, books reservations, manages profile, and processes payments. |
-| **Rental Agent** | Primary | Handles vehicle pickup/return processes, verifies documentation, and inspects vehicles. |
-| **Car** | Primary | Creates pick-up and return report. Sends the report to the system and also GPS-location data every 5 minutes. |
-| **System Administrator** | Primary | Manages user accounts, roles, system parameters, and system logs. |
-| **Payment Provider** | External System | Processes credit/debit card transactions and refunds securely. |
-| **DMV / Verification Service** | External System | Verifies driver's license validity and driving history (optional integration). |
+## 2. Stakeholders
+
+This section names *stakeholders* as individuals, groups, or organizations
+involved in decision making, investment or oversigh, but who are not primary
+users of the system.
+
+| Stakeholder                  | Description |
+| :---                         | :---        |
+| *Owner*                      | owner of *freerider.de*.                       |
+| *CEO*                        | executive manager of *freerider.de*.           |
+| *Investors*                  | holders of financial stakes in *freerider.de*. |
+| *Authorities (City Council)* | oversight granting permission to operate *freerider.de*. |
+| *Product Owner (PO)*         | defines product features and delivery timelines; acts as a bridge between stakeholders, customers, and the development team. |
+
+
+&nbsp;
+
+## 3. Actors & Roles
+
+This section names *actors* and *roles* representing users and anything that
+interacs with a system. *Primary actors* represent targeted user groups
+while *Secondary actors* represent entities needed for operation.
+
+| Actor/Role              | Type      | Description |
+| :---                    | :---      | :---        |
+| *Guest*                 | Primary   | role of an unregistered user who can explore offers. |
+| *Customer (individual)* | Primary   | registered person with validated information (name, address, contact, payment  |information).
+| *Customer (business)*   | Primary   | registered business entity with validated information, specifically a tax-id  |(Umsatzsteuernummer).
+| *Customer (driver)*     | Primary   | person with validated driver's license. |
+| *Staff*                 | Primary   | employee of *freerider.de*. |
+| *Service Agent*         | Primary   | staff member who handles exception cases such as damage, theft or accidents. |
+| *Fleet Manager*         | Secondary | staff member who manages the fleet of vehices, e.g. on-boards and off-boards vehicles. |
+| *Vehicle*               | Primary   | actor that creates pickup and return reports in each vehice and sends them to (interacts  |with) the system.
+| *Payment Service*       | Secondary | actor that handles payments and interacts with the system. |
+
 
 <!-- | **Fleet Manager** | Primary | Manages vehicle inventory, maintenance schedules, and pricing rates. | -->
+<!-- | **DMV / Verification Service** | External System | Verifies driver's license validity and driving history (optional integration). | -->
+<!-- | **System Administrator** | Primary | Manages user accounts, roles, system parameters, and system logs. | -->
 
 
----
+&nbsp;
 
-## 3. Use Case Index
+## 4. Use Case Index
 
-The section of the Use Case Index lists all use cases of the Use Case Document:
+This section names all Use Cases included in Section 5:
 
 - **UC-100:** *Reserve a Vehicle*
 - **UC-110:** *Manage Reservation (Modify)*
@@ -47,24 +89,67 @@ The section of the Use Case Index lists all use cases of the Use Case Document:
 - **UC-500:** *Manage Fleet Inventory*
 - **UC-550:** *Permanently send GPS-location*
 
+<!-- 
+| UC-ID  | Description |
+| :---   | :---        |
+| UC-100 | *Reserve a Vehicle*             |
+| UC-110 | *Manage Reservation (Modify)*   |
+| UC-120 | *Manage Reservation (Cancel)*   |
+| UC-200 | *Vehicle Pickup*                |
+| UC-210 | *Create Pickup Report*          |
+| UC-300 | *Vehicle Return*                |
+| UC-310 | *Create Return Report*          |
+| UC-400 | *Register new Customer*         |
+| UC-410 | *Unregister Customer*           |
+| UC-500 | *Manage Fleet Inventory*        |
+| UC-550 | *Permanently send GPS-location* |
+-->
 
----
 
-## 4. Detailed Use Cases
+&nbsp;
+
+## 5. Detailed Use Cases
+
+This section contains detailed descriptions of use cases, each following the
+same template:
+[UC-CRS-template.docx](UC-CRS-template.docx) /
+[UC-CRS-template.pdf](UC-CRS-template.pdf).
+
 
 ### Use Case UC-100: *Reserve a Vehicle*
 
+This use case describes when a *Customer* wants to reserve a vehicle of a
+desired class, time of use and desired pickup and return locations.
+Payment is required for a successful reservation.
+
+The use case description includes:
+
+* Primary Actor: *Customer*
+* Secondary Actors: *System*, *Payment Provider*
+
+<!-- 
+* *Section 1* describes conditions that trigger of the use case.
+ -->
+
+* *Section 1* states the goal of the use case.
+
+* *Section 2* lists pre- and post-conditions as statements that hold (are true)
+    before and after the use case.
+
+<img src="img/UC-CRS-UC100 Create Reservation-1.png" width="600"/>
+
+<!-- 
 * **Primary Actor:** Customer
 
 * **Secondary Actors:** System, Payment Provider
 
-* **Goal:** Allow a customer to search, select, and book a vehicle of a selected
+* **1. Goal:** Allow a customer to search, select, and book a vehicle of a selected
 class for a specified timeframe and pickup and return locations.
 
 
-* **Pre-conditions:** 
+* **2. Pre-conditions:** 
 
-  1. Vehicles of the requested class are available at desired locations.
+  1. Customer is “active” (permitted to perform business operations).
 
 
 * **Post-conditions:** 
@@ -74,119 +159,27 @@ class for a specified timeframe and pickup and return locations.
   2. Inventory availability is updated (vehicle held/allocated).
 
   3. A confirmation email/SMS is sent to the customer.
-
-
-#### Main Success Scenario (MSS):
-
-1. Customer browses catalog of vehicles and map of locations.
-
-1. Customer enters or selects specific dates, times, pickup/drop-off locations and the desired vehicle category.
-
-1. Customer sends this information as inquiry to the system.
-
-1. The system verifies the inquiry and responds to the customer with
-
-    a. accepting the inquiry and offering a final price or
-
-    b. returning a close match to the inquiry, also with a final price or
-
-    c. returning that the inquiry cannot be met.
-
-1. The customer has 10 minutes to
-
-    a. accept the offer or
-
-    b. reject the offer or not to respond.
-
-1. If the customer has accepted the offer, payment must be made by:
-
-    a. entering payment information or
-
-    b. selecting a authorized payment method registered in the customer's profile.
-
-1. In case of new payment information, the payment information must be validated
-    with the payment provider in order to be accepted.
-
-    a. Payment is requested from the payment provider.
-
-1. In case of existing payment information (e.g. a registered credit card that has
-    already been used), the payment is immediately requested from the payment provider.
-
-1. The system sends a confirmation to the customer.
-
-<!-- 
-6. Customer inputs driver details (Name, Contact, Driver’s License Number) or logs into an existing account.
-7. System calculates final price including taxes, fees, and selected options.
-8. Customer enters payment information.
-9. System contacts Payment Provider to authorize payment or place a hold.
-10. Payment Provider confirms authorization.
-11. System creates the reservation, assigns a unique Reservation ID, updates vehicle availability, and displays the receipt to the Customer.
  -->
 
 
-#### Extensions (alternative paths):
+&nbsp;
 
-**4c. No vehicles available for selected dates/location:**
+#### 3. Main Success Scenario (*"Happy Path"*):
 
-- 4c.1 System notifies the customer of no availability.
+This section describes steps the primary actor must perform in order to
+achieve the goal of the use case. Only the *"Happy Path"* is considered.
+Errors are described in section 
 
-- 4c.2 System suggests alternative nearby pickup locations or alternative dates.
-
-- 4c.3 Customer updates search parameters or exits.
-
-
-**7a. Payment authorization fails (e.g., invalid card):**
-
-- 7a.1 System notifies the customer of the payment failure.
-
-- 7a.2 System prompts customer to re-enter payment details or try a different card.
-
-- 7a.3 Customer provides valid payment or cancels reservation process.
+<img src="img/UC-CRS-UC100 Create Reservation-2.png" width="600"/>
 
 
-**8. Payment fails within 12 hours after accepting a reservation (e.g., insufficient funds):**
+&nbsp;
 
-- 8.1 System notifies the customer of the payment failure.
+#### 4. Error Paths and Exception Flows:
 
-- 8.2 System reverts the status of the reservation from `CONFIRMED` to `PENDING` with
-    note `failed payment`.
+This section describes errors that may occur when the use case is performed.
 
-- 8.3 System notifies the customer to enter new payment information, e.g. of a different card.
-
-- 8.4 Customer provides valid payment or cancels reservation process.
-
-    a. System reverts the status of the reservation from `PENDING` to `CANCELLED` when the customer cancells the reservation.
-
-- 8.5 System reverts the status of the reservation from `PENDING` to `CONFIRMED` and
-    removes the note `failed payment` when payment arrives within a renewed 12h timeframe.
-
-- 8.6 System reverts the status of the reservation from `PENDING` to `CANCELLED` when
-    no payment has arrived within another 12h timeframe.
-
-    a. System notifies the customer about the cancellation.
-
-
----
-
-### UC-110: *Manage Reservation (Modify)*
-
-* **Primary Actor:** *name an actor*
-
-* **Secondary Actors:** *name secondary actors, if any*
-
-* **Goal:** *formulate a sentence for the main goal of the use case.*
-
-* **Pre-conditions:**
-  1. *name pre-conditions for the use case, if any*
-
-* **Post-conditions:** 
-  1. *name post-conditions for the use case, if any*
-
-#### Main Success Scenario (MSS):
-*Describe steps of the use case for the success scenario.*
-
-#### Extensions (alternative paths):
-*Describe other possible paths that are not part of the main success scenario.*
+<img src="img/UC-CRS-UC100 Create Reservation-3.png" width="600"/>
 
 
 ---
